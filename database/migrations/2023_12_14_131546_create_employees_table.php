@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('phone_number')->nullable();
             $table->boolean('is_admin');
             $table->date('hire_date');
-            $table->enum('employment_type', ['full-time', 'part-time'])->default('full-time');
+            $table->enum('employment_type', ['fullTime', 'partTime'])->default('fullTime');
             $table->string('password');
             $table->softDeletes();
             $table->timestamps();
