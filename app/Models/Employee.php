@@ -10,6 +10,8 @@ class Employee extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $primaryKey = 'employee_id';
+
     protected $fillable = [
         'first_name',
         'last_name',
